@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 GameSchema = new mongoose.Schema({
     winner: {
         type: String,
-        default: null
+        default: null,
     },
     expected_turn: {
         type: Number,
-        default: 1
+        default: 1,
     },
     matrix: [[]],
     moves: [{
